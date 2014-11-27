@@ -1,0 +1,5 @@
+sass --watch css:css
+
+sass $endereco_arquivo.scss $endereco_destino.css
+
+sass --style compressed $endereco_arquivo.scss:$endereco_destino.css

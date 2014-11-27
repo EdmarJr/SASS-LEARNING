@@ -1,0 +1,50 @@
+.container {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    width: $width_page;
+    border: $border_default;
+    @include border-radius(10px);
+}
+
+.btn-blue {
+    @include btn;
+    @include border-radius(5px);
+    background : $blue;
+    color: $white;
+    &:hover {
+        background: red;
+    }
+}
+
+%titulo {
+    font-size: 40px;
+}
+
+.sublinhado {
+    @extend %titulo;
+    text-decoration: underline;
+}
+
+.btn-menor {
+    width: diferenca($width_page, $width_page/2) !important;
+}
+
+.item {
+    margin-bottom: 50px;
+    h1 {
+        color: red;
+    }
+    
+    p {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+.item h1 {
+    
+}
+.item p {
+    
+}
